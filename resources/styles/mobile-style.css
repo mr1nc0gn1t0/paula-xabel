@@ -109,6 +109,10 @@
         display: none !important;
     }
 
+    .content .section {
+        margin: 5px;
+    }
+
     iframe#form {
         height: 2600px;
     }
