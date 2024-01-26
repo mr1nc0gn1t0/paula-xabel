@@ -1,0 +1,368 @@
+:root {
+    --h1-font-size: 75px;
+    --h1-line-height: 90px;
+    --h1-font-weight: 300;
+
+    --h2-font-size: 50px;
+    --h2-line-height: 60px;
+    --h2-font-weight: 600;
+
+    --h3-font-size: 40px;
+    --h3-line-height: 48px;
+    --h3-font-weight: 400;
+
+    --h4-font-size: 30px;
+    --h4-line-height: 30px;
+    --h4-font-weight: 300;
+
+    --font-size: 20px;
+    --line-height: 28px;
+    --font-weight: 300;
+
+    --bg-color: #FFFBF5;
+    --content-bg-color: #C4D1BF;
+    --accent-color: #45604A;
+    --main-color: #4C5566;
+    --divider-color: #E3E8EF;
+
+    --spacer-height: 5vh;
+    --divider-margin: 7vh;
+
+    --content-width: 45vw;
+    --content-margin: 60px
+}
+
+div[role=navigation] > a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+
+}
+
+button {
+    all: unset;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #0445AF;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 0 33px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: 'roboto';
+    text-align: justify;
+    color: var(--main-color);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    overflow-y: var(--main-overflow);
+
+    height: calc(100vh - 250px);
+}
+
+
+b {
+    font-weight: var(--h3-font-weight);
+}
+
+.corner.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.corner.flower {
+    background: url('/resources/img/lillies-short.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    width: 170px;
+    height: 300px;
+    transform: rotateX(180deg);
+}
+
+.side {
+    width: 20vw;
+}
+
+.side.flower {
+    background: url('/resources/img/lillies-long.webp');
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position-y: top;
+    background-position-x: center;
+}
+
+.side.flower.right {
+    transform: scaleX(-1);
+
+    margin-top: 200px;
+}
+
+.side.flower.left {
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    z-index: 1;
+    
+    margin: var(--content-margin);
+    margin-bottom: 0px;
+    width: var(--content-width);
+}
+
+.main {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.content .backgrounded {
+    background-color: var(--content-bg-color);
+    border-radius: 15px;
+}
+
+.content .section {
+    margin: 50px 10px 0 10px;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul>li {
+    list-style: disc;
+}
+
+.statement {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.question {
+    margin-top: 15px;
+}
+
+footer {
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--main-color);
+}
+
+
+nav {
+    font-family: 'Dancing Script';
+    font-size: var(--h4-font-size);
+    line-height: var(--h4-line-height);
+    font-weight: var(--h4-font-weight);
+}
+
+.main>.content>nav.desktop {
+    height: 150px;
+    display: flex;
+    position: sticky;
+    z-index: 2;
+}
+
+nav ul {
+    display: inline-flex;
+    margin: auto;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    cursor: pointer;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: var(--h1-font-weight);
+}
+
+
+ul.list {
+    text-align: center;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "brittany signature", "Dancing Script", "roboto";
+}
+
+span.divider {
+    width: 15vw;
+    height: 1px;
+    background-color: var(--divider-color);
+    display: block;
+    margin: var(--divider-margin) auto var(--divider-margin);
+}
+
+
+.title {
+    margin: 0 auto;
+
+    width: 375px;
+}
+
+.title h1 {
+    line-height: 40px;
+}
+
+.title h1:nth-child(1) {
+    text-align: left;
+}
+
+.title h1:nth-child(2) {
+    text-align: center;
+}
+
+.title h1:nth-child(3) {
+    text-align: right;
+}
+
+.spacer {
+    display: block;
+    height: var(--spacer-height);
+}
+
+
+h1 {
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
+    font-weight: var(--h1-font-weight);
+
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+    font-weight: var(--h3-font-weight);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+    line-height: var(--h4-line-height);
+    font-weight: var(--h4-font-weight);
+}
+
+b {
+    font-weight: var(--h3-font-weight);
+}
+
+.center {
+    text-align: center;
+}
+
+.bottom-decorator {
+    flex-grow: 1;
+    width: 120vw;
+    transform: translateX(-25vw);
+}
+
+#garden {
+    height: 100%;
+    width: 100%;
+}
+
+#garden path.figure {
+    fill: var(--content-bg-color);
+    fill-opacity: 0.60;
+}
+
+#garden path.background {
+    fill: var(--bg-color);
+}
+
+.timetable tr td:first-child {
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+span.nav-trigger {
+    width: 48px;
+    height: 48px;
+}
+
+span.nav-trigger.open {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+span.nav-trigger.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+
+span.nav-trigger:hover {
+    cursor: pointer;
+}
+
+.nav-container {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 30px;
+    bottom: 0;
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+    background-color: var(--bg-color);
+}
+
+.nav-container nav ul {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    margin: 80px 0;
+    line-height: 50px;
+}
+
+iframe#form {
+    height: 3010px;
+}
